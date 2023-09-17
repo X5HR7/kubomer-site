@@ -1,0 +1,31 @@
+@import url('../vendor/fonts/fonts.css');
+@import url('../vendor/css/normalize.css');
+
+@import url('./globals.css');
+
+@import url('./header.css');
+@import url('./promo.css');
+@import url('./docs.css');
+@import url('./services.css');
+@import url('./map.css');
+@import url('./requests.css');
+@import url('./footer.css');
+@import url('./slider.css');
+
+@import url('./popup/popup.css');
+@import url('./popup/_opened/popup_opened.css');
+@import url('./popup/__container/popup__container.css');
+@import url('./popup/__container/_type/popup__container_type_image.css');
+@import url('./popup/__button-close/popup__button-close.css');
+@import url('./popup/__form/popup__form.css');
+@import url('./popup/__title/popup__title.css');
+@import url('./popup/__subtitle/popup__subtitle.css');
+@import url('./popup/__caption/popup__caption.css');
+@import url('./popup/__input/popup__input.css');
+@import url('./popup/__input-label/popup__input-label.css');
+@import url('./popup/__input/_type/popup__input_type_error.css');
+@import url('./popup/__image/popup__image.css');
+@import url('./popup/__button-submit/popup__button-submit.css');
+@import url('./popup/__button-submit/_disabled/popup__button-submit_disabled.css');
+@import url('./popup/__error/popup__error.css');
+@import url('./popup/__agreement/popup__agreement.css');

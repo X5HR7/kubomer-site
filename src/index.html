@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KUBOMER</title>
+  </head>
+  <body>
+    <div class="popup">
+      <div class="popup__container">
+        <button class="popup__button-close" type="button"></button>
+        <h2 class="popup__title">Заполните форму ниже и закажите поверку!</h2>
+        <p class="popup__subtitle">Наш специалист свяжется с Вами в течение 15 минут</p>
+        <form name="popup-form-phone" class="popup__form popup__form_type_phone" novalidate>
+          <label for="phone-input" class="popup__input-label">Ваш номер</label>
+          <input
+            type="text"
+            class="popup__input popup__input_type_phone"
+            id="phone-input"
+            value="+7"
+            required
+          />
+          <p class="popup__error phone-input-error"></p>
+          <button
+            class="button popup__button-submit popup__button-submit_disabled"
+            type="submit"
+            disabled
+          >
+            Сохранить
+          </button>
+        </form>
+        <p class="popup__agreement">
+          Нажимая на кнопку, вы даете согласие на обработку своих
+          <a href="https://cubomer.ru/perdata" target="_blank" class="link popup__link"
+            >персональных данных.</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <header class="header flex-row">
+      <div class="header__logo flex-col">
+        <span class="header__logo-title">КУБОМЕР</span>
+        <span class="header__logo-subtitle">*ООО "Нефтепродуктавтоматика плюс"</span>
+      </div>
+      <div class="header__item">
+        <a href="https://pub.fsa.gov.ru/ral/view/29925/applicant" target="_blank" class="link header__link">
+          Аккредитованная служба по поверке счетчиков воды в Москве и области
+        </a>
+      </div>
+      <div class="flex-row header__item header__region">
+        <img src="<%=require('./images/gps-icon.png')%>" alt="Регион" class="header__gps-image" />
+        <div class="header__region-container">
+          <span class="header__region-text">Выбранный регион:</span>
+          <span class="header__region-name">Москва и Московская область</span>
+        </div>
+      </div>
+      <div class="flex-row header__item">
+        <img src="<%=require('./images/phone-icon.png')%>" alt="" class="header__contacts-image" />
+        <div class="header__contacts-container">
+          <span class="header__contacts-text">Контактный номер</span>
+          <span class="header__contacts-phone">+7 (499) 348-83-22</span>
+        </div>
+      </div>
+      <button type="button" class="button header__button">ЗАКАЗАТЬ ПРОВЕРКУ</button>
+    </header>
+
+    <main class="main">
+      <section class="promo">
+        <div class="promo__content">
+          <div class="promo__title-wrapper">
+            <h2 class="promo__title">Поверка счетчиков воды</h2>
+            <p class="promo__subtitle">в Москве и Московской области от 500 рублей</p>
+          </div>
+          <p class="promo__info">
+            Официальная установка, поверка и замена водосчетчиков по Москве и области Аттестат
+            Аккредитации RA.RU.310468
+          </p>
+        </div>
+        <button class="button promo__button">ЗАКАЗАТЬ ПРОВЕРКУ</button>
+      </section>
+
+      <section class="docs flex-row">
+        <div class="docs__text-content">
+          <h2 class="docs__title section-title">Разрешительные документы</h2>
+          <div class="docs__info">
+            <p class="docs-paragraph">
+              Согласно ФЗ № 102 от 26.06.2008 г. поверку счетчиков воды имеют право проводить только
+              аккредитованные на проведение поверки средств измерений юридические лица и
+              индивидуальные предприниматели.
+            </p>
+            <p class="docs-paragraph">
+              Наша компания является аккредитованной компанией (регистрационный номер записи в
+              реестре RA.RU.310468 на территории всей Российской Федерации). Справа Вы найдете
+              разрешительные документы и копию аккредитации
+            </p>
+          </div>
+        </div>
+        <div class="slider">
+          <button type="button" class="link slider__button slider__button_type_previous"></button>
+          <img src="<%=require('./images/doc1.png')%>" alt="документы" class="slider__image" />
+          <button type="button" class="link slider__button slider__button_type_next"></button>
+        </div>
+      </section>
+
+      <section class="services">
+        <h2 class="services__title section-title">Оказываемые услуги</h2>
+        <ul class="flex-row services__item-list">
+          <li class="flex-row services__item">
+            <img src="<%=require('./images/service-1.png')%>" alt="image" class="servies__item-image" />
+            <div class="services__item-text-content flex-col">
+              <h3 class="services__item-name">Поверка счетчиков воды на дому и без демонтажа</h3>
+              <p class="services__item-price">от 500 руб</p>
+            </div>
+          </li>
+          <li class="flex-row services__item">
+            <img src="<%=require('./images/service-2.png')%>" alt="image" class="servies__item-image" />
+            <div class="services__item-text-content flex-col">
+              <h3 class="services__item-name">Замена счетчиков воды на новые</h3>
+              <p class="services__item-price">от 1500 руб</p>
+            </div>
+          </li>
+          <li class="flex-row services__item">
+            <img src="<%=require('./images/service-3.png')%>" alt="image" class="servies__item-image" />
+            <div class="services__item-text-content flex-col">
+              <h3 class="services__item-name">Шеф-монтаж счетчиков воды</h3>
+              <p class="services__item-price">от 500 руб</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="map">
+        <h2 class="map__title section-title">
+          Осуществляем поверку счетчиков во всех округах Москвы
+        </h2>
+        <iframe
+          class="map__map"
+          src="https://yandex.ru/map-widget/v1/?lang=ru_RU&amp;scroll=true&amp;um=constructor%3A6856776b2a2404b3b22eb206c67788a3ddc2462b87ebec7138e70050e46686c8"
+          frameborder="0"
+          allowfullscreen="true"
+          width="1200px"
+          height="478px"
+          style="display: block"
+        ></iframe>
+      </section>
+
+      <section class="flex-col requests">
+        <h2 class="requests__title">
+          <span class="requests__title_bold">Оставьте заявку</span>
+          <span class="requests__title_default">на коллективную поверку счетчиков</span>
+        </h2>
+        <p class="requests__subtitle">
+          При коллективной заявке стоимость поверки одного счетчика от 500 рублей
+        </p>
+        <button class="button requests__button">ОСТАВИТЬ ЗАЯВКУ</button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="flex-row footer__container">
+        <div class="footer__logo flex-col">
+          <span class="footer__logo-title">КУБОМЕР</span>
+          <span class="footer__logo-subtitle">*ООО "Нефтепродуктавтоматика плюс"</span>
+        </div>
+        <div class="footer__item">
+          <a href="https://pub.fsa.gov.ru/ral/view/29925/applicant" target="_blank" class="link footer__link">
+            Аккредитованная служба по поверке счетчиков воды в Москве и области
+          </a>
+        </div>
+        <div class="flex-row footer__item">
+          <img src="<%=require('./images/gps-icon.png')%>" alt="Регион" class="footer__gps-image" />
+          <div class="footer__region-container">
+            <span class="footer__region-text">Выбранный регион:</span>
+            <span class="footer__region-name">Москва и Московская область</span>
+          </div>
+        </div>
+        <div class="flex-row footer__item">
+          <img src="<%=require('./images/phone-icon.png')%>" alt="" class="footer__contacts-image" />
+          <div class="footer__contacts-container">
+            <span class="footer__contacts-text">Контактный номер</span>
+            <span class="footer__contacts-phone">+7 (499) 348-83-22</span>
+          </div>
+        </div>
+        <button type="button" class="button footer__button">ЗАКАЗАТЬ ПРОВЕРКУ</button>
+      </div>
+      <a href="/sogl" class="link footer__rools-link">Пользовательское соглашение</a>
+    </footer>
+  </body>
+</html>

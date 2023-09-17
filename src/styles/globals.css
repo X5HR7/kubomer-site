@@ -1,0 +1,79 @@
+body {
+  font-family: 'TildaSans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.main {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1200px;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity .3s;
+}
+
+.link:hover {
+  opacity: .7;
+  transition: opacity .3s;
+  cursor: pointer;
+}
+
+.button {
+  background-color: #cf0b11;
+  transition: background-color .3s;
+}
+
+.button:hover {
+  background-color: #a90a0f;
+  transition: background-color .3s;
+  cursor: pointer;
+}
+
+.section-title {
+  font-size: 35px;
+  line-height: 1.55;
+  font-weight: 500;
+}
+
+.section-title::after {
+  content: '';
+  margin-top: 25px;
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: #ff0303;
+}
+
+@media screen and (max-width: 1250px) {
+  .main {
+    max-width: calc(100% - 20px);
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .section-title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .section-title {
+    width: fit-content;
+    font-size: 24px;
+  }
+}
